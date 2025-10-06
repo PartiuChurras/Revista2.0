@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revista 2.0 :D</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <div class="grid-container">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <main>Main</main>
+        <footer>Footer</footer>
+    </div>
+
+
     <h1>My Summer Car Tutoriais</h1>
  
     <picture>
@@ -16,12 +25,14 @@
 
     </picture>
 
-    <div><!--_SESSÂO NAVEGAÇÂO_-->
-        <nav>
+    <div ><!--_SESSÂO NAVEGAÇÂO_-->
+        <nav class="menu">
             <ul>
                 <li><a href="#Tutoriais">Tutoriais</a></li>
                 <li><a href="#Noticiais">Noticiais</a></li>
                 <li><a href="#Links">Links</a></li>
+                <li><a href="#tabela">Imagens</a></li>
+                <li><a href="#Formulario">Formulário</a></li>
 
             </ul>
         </nav>
@@ -30,9 +41,9 @@
     <div>
         <header id="topo">
         <!-- SESSÃO TURORIAIS--> 
-            <section id="Links">
+            <section id="Links" class="links">
                 <nav>
-                    <ul>
+                    <ul>FFD93D
                         <li><a href="https://youtu.be/tWyGhKsJcWc?si=2Mods9GGUP0MGsbo" target="_blank" rel="noopener noreferrer">Montagem do motor</a></li>
                         <li><a href="https://youtu.be/QYYKYNjpjYc?si=vFvoJhFNy4UIko9I" target="_blank" rel="noopener noreferrer">Montagem da Suspensão</a></li>
                         <li><a href="https://youtu.be/X7zKRNINu7g?si=JBRnNVRGYiVrcZbO" target="_blank" rel="noopener noreferrer">Curiosidades</a></li>
@@ -46,9 +57,9 @@
     <div>
         <main>
             <!-- SESSÃO NOTÍCIAS-->
-            <section id="Noticiais">
+            <section id="Noticiais" class="destaque">
                 <article>
-                    <h3><mark><strong>My Summer Car recebe atualização surpresa com novas peças e melhorias na IA do trânsito</strong></mark></h3>
+                    <h3><strong>My Summer Car recebe atualização surpresa com novas peças e melhorias na IA do trânsito</strong></h3>
                     <p>
                         A Amistech Games lançou uma atualização inesperada para <abbr title="My Summer Car">Msc</abbr>, trazendo novidades que 
                         prometem deixar a experiência ainda mais caótica — e divertida. Entre as adições, jogadores 
@@ -67,7 +78,7 @@
             <section id="Tutoriais">
                 <!-- SESSÃO TUTORIAIS-->
                 <article>
-                        <h3><strong><mark>Como Montar a Suspensão do Satsuma</mark></strong></h3>
+                        <h3><strong>Como Montar a Suspensão do Satsuma</strong></h3>
                         <p> 
                             Montagem da Suspensão (Dianteira) – Português <br>
                             <em>
@@ -93,7 +104,7 @@
 
             <!-- SESSÃO  IMAGENS-->
             <section id="imagens">
-                <h3><strong><mark>Imagens do Jogo</mark></strong></h3>
+                <h3><strong>Imagens do Jogo</strong></h3>
                 <img src="imagens/suspensao-satsuma.jpg" alt="Imagem da Suspensão do Satsuma" title="Suspensão do Satsuma" width="300">
                 <img src="imagens/satsuma.webp" alt="Imagem do Satsuma" title="Satsuma" width="300">
                 <a href="https://my-summer-car.fandom.com/wiki/Satsuma_GT_package" target="_blank">
@@ -102,70 +113,79 @@
             </section>
 
             <!-- SESSÃO LISTAS-->
-            <section id="edicoes-recentes">
-                <ol start="10">
-                    <li>Atualização de Abril de 2024: Novas peças de performance e melhorias na IA do trânsito.</li>
-                    <li>Atualização de Fevereiro de 2024: Correções de bugs e ajustes no sistema de sobrevivência.</li>
-                    <li>Atualização de Dezembro de 2023: Adição de novos veículos e melhorias gráficas.</li>
-                    <li>Atualização de Outubro de 2023: Implementação do sistema de clima dinâmico e novos desafios.</li>
-                    <li>Atualização de Agosto de 2023: Introdução de novas missões e expansão do mapa.</li>
-                </ol>
+            <section id="tabela">
+                <section id="edicoes-recentes">
+                    <ol start="10">
+                        <li>Atualização de Abril de 2024: Novas peças de performance e melhorias na IA do trânsito.</li>
+                        <li>Atualização de Fevereiro de 2024: Correções de bugs e ajustes no sistema de sobrevivência.</li>
+                        <li>Atualização de Dezembro de 2023: Adição de novos veículos e melhorias gráficas.</li>
+                        <li>Atualização de Outubro de 2023: Implementação do sistema de clima dinâmico e novos desafios.</li>
+                        <li>Atualização de Agosto de 2023: Introdução de novas missões e expansão do mapa.</li>
+                    </ol>
+                </section>
             </section>
 
-            <section id="edicoes-populares">
-                <ul>
-                    <li type="square">Conheça todos os Npcs</li>
-                    <li type="square">Segredos do Bebão</li>
-                    <li type="square">Localizações das Peças Satsuma-GT</li>
-                    <li type="square">Guia Completo de Mecânica</li>
-                    <li type="square">Dicas para Sobreviver no Jogo</li>
-                </ul>
+            <section id="tabela">
+                <section id="edicoes-populares">
+                    <ul>
+                        <li type="square">Conheça todos os Npcs</li>
+                        <li type="square">Segredos do Bebão</li>
+                        <li type="square">Localizações das Peças Satsuma-GT</li>
+                        <li type="square">Guia Completo de Mecânica</li>
+                        <li type="square">Dicas para Sobreviver no Jogo</li>
+                    </ul>
+                </section>
             </section>
 
             <!-- SESSÃO GLOSSÁRIO-->
-            <section id="glossario">
-                <dl>
-                    <dt>MSC</dt>
-                    <dd>My Summer Car</dd>
 
-                    <dt>Van</dt>
-                    <dd>Furgão utilizado para transporte de mercadorias e passageiros.</dd>
+            <section id ="tabela">
+                <section id="glossario">
+                    <dl>
+                        <dt>MSC</dt>
+                        <dd>My Summer Car</dd>
 
-                    <dt>Gifu</dt>
-                    <dd>Caminho utilizado para esvaziar fossas no jogo</dd>
-                </dl>
+                        <dt>Van</dt>
+                        <dd>Furgão utilizado para transporte de mercadorias e passageiros.</dd>
+
+                        <dt>Gifu</dt>
+                        <dd>Caminho utilizado para esvaziar fossas no jogo</dd>
+                    </dl>
+                </section>
             </section>
 
             <!-- SESSÃO LISTA ANINHADA-->
-            <section id="listaaninhada">
-                <ul>
-                    <li>Notícias
-                        <ul>
-                        <li>Atualizações do Jogo</li>
-                        <li>Lançamentos de DLC</li>
-                        <li>Eventos da Comunidade</li>
-                        </ul>
-                    </li>
-                    <li>Tutoriais
-                        <ul>
-                        <li>Montagem do Satsuma</li>
-                        <li>Dicas de Sobrevivência</li>
-                        <li>Mods Essenciais</li>
-                        </ul>
-                    </li>
-                    <li>Galeria
-                        <ul>
-                        <li>Capturas de Tela</li>
-                        <li>Fan Art</li>
-                        <li>Vídeos da Comunidade</li>
-                        </ul>
-                    </li>
-                </ul>
+            <section id="tabela">
+                <section id="listaaninhada">
+                    <ul>
+                        <li>Notícias
+                            <ul>
+                            <li>Atualizações do Jogo</li>
+                            <li>Lançamentos de DLC</li>
+                            <li>Eventos da Comunidade</li>
+                            </ul>
+                        </li>
+                        <li>Tutoriais
+                            <ul>
+                            <li>Montagem do Satsuma</li>
+                            <li>Dicas de Sobrevivência</li>
+                            <li>Mods Essenciais</li>
+                            </ul>
+                        </li>
+                        <li>Galeria
+                            <ul>
+                            <li>Capturas de Tela</li>
+                            <li>Fan Art</li>
+                            <li>Vídeos da Comunidade</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
             </section>
 
             <!-- SESSÃO TABELA AUTORES-->
-            <section id="tabela-autores">
-                <table class="tabela-autores" border="2">
+            <section>
+                <table class="tabela" border="2"  id="tabela">
                     <caption><strong>Autores dos Tutoriais</strong></caption>
                     <thead>
                         <tr>
@@ -194,6 +214,45 @@
                 </table>
             </section>
 
+        <hr>
+        <section id="Formulario">
+            <section id="tabela">
+                <h2>Formulário de Contato</h2>
+                <form action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+                    <input type="text" required maxlength="50" placeholder="Digite seu nome completo"> <br>
+                    <input type="email" required placeholder="Digite seu e-mail"> <br>
+                    <input type="password" required minlength="6" placeholder="Crie sua senha"> <br>
+                    <input type="date" required> <br>
+
+                    <select name="Interesses" id="interesses"> 
+                        <option value="" disabled selected>Selecione seu interesse</option>
+                        <option value="Tutoriais">Tutoriais</option>
+                        <option value="Noticias">Notícias</option>
+                        <option value="Games">Games</option>
+                        <option value="Outros">Outros</option>
+                    </select> <br> <br>
+
+                    <label for="notificacoes">Deseja receber notificações?</label><br>
+                    <input type="radio" name="notificacoes" value="sim"> Sim <br>
+                    <input type="radio" name="notificacoes" value="nao"> Não <br> <br>
+
+                    <legend>Veículos Preferidos no Jogo Msc</legend>
+                    <input type="checkbox" name="gostos" value="carros"> Carros <br>
+                    <input type="checkbox" name="gostos" value="motos"> Motos <br>
+                    <input type="checkbox" name="gostos" value="caminhoes"> Caminhões <br> <br>
+
+                    <legend>Envie a sua foto aqui</legend>
+                    <input type="file" accept="image/*"> <br> <br>
+
+                    <textarea rows="4" cols="40" placeholder="Escreva sua sugestão ou comentário"></textarea> <br> <br>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+
+                </form>
+            </section>
+        </section>
+        <hr>
         </main>
     </div>
 
@@ -209,7 +268,7 @@
     </aside>
 
     <hr>
-        <footer>
+        <footer id="rodape">
             <p>© 2024 My Summer Car Tutoriais. Todos os direitos reservados a Pedro.</p>
         </footer>
         <br><br> <a href="#topo">Voltar ao topo</a>
