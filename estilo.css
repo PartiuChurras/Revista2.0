@@ -1,30 +1,23 @@
-/* Correções: 
-   1. Sintaxe de aninhamento (Sass/SCSS) removida e convertida para CSS padrão.
-   2. Corrigida a sintaxe do seletor h1 h2.
-   3. Corrigida a declaração inválida para background-color.
-   4. Removida propriedade inválida do seletor universal (*).
-*/
+
 
 .flex-container {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    margin: 0px;
+    margin: 1px;
 }  
 
 .row{
     flex-direction: row;
 }
 
-flex-itens{
-    width: auto;
+.flex-itens{
+    width: 50%;
     height: auto;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    position: relative;
 }
+
+
 
 
 /* ---------------------- */
@@ -138,12 +131,23 @@ dt, dd, dl {
     text-align: center;
     font-style: italic; 
     background-color: #2563EB;
+    width: 60%;
 }
 .links a {
-    color: #1A1A1A;
+    color: #ffffff;
 }
 .links a:hover {
+    padding: 5px;
     background-color: rgb(209, 99, 9);
+}
+
+.links ul li {
+    position: relative;
+    right: 30px;
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 6px;
+    
 }
 
 
