@@ -1,8 +1,38 @@
+/* Correções: 
+   1. Sintaxe de aninhamento (Sass/SCSS) removida e convertida para CSS padrão.
+   2. Corrigida a sintaxe do seletor h1 h2.
+   3. Corrigida a declaração inválida para background-color.
+   4. Removida propriedade inválida do seletor universal (*).
+*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0px;
+}  
+
+.row{
+    flex-direction: row;
+}
+
+flex-itens{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* ---------------------- */
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
-
     grid-template-areas: 
         "header header"
         "nav main"
@@ -33,24 +63,38 @@ body {
 
 * {
     text-align: center;
-    font-style: justify;
+    /* font-style: justify é inválido e foi removido. */
 }
 
+/* CORREÇÃO 1: Aninhamento em .menu para CSS padrão */
 .menu {
     background-color: #1E3A8A;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
-    li {
-        color: white;
-    }
-    a {
-        &:hover {
-        background-color: rgb(209, 99, 9);
-        }
-        color: white;
-    }
+}
+
+#listas {
+    text-align: center;
+    font-style: italic;
+    background-color: #1E3A8A;
+    color: white;   
+}
+.menu li {
+    color: white;
+}
+.menu a {
+    color: white;
+}
+.menu a:hover {
+    background-color: rgb(209, 99, 9);
+}
+
+dt, dd, dl {
+    text-align: center;
+    font-style: italic;
+    background-color: #1E3A8A;
+    color: white;
 }
 
 #rodape {
@@ -67,8 +111,9 @@ body {
     text-align: center;
 }
 
+/* CORREÇÃO 2: background-color inválido. Assumi que você queria uma borda amarela. */
 #tabela input:focus {
-    background-color: 10px solid yellow;
+    border: 2px solid yellow; 
 }
 
 .destaque p::first-letter {
@@ -86,31 +131,31 @@ body {
 .destaque h3::after {
     content: "🗿";
     color: yellow;
-    }
+}
 
+/* CORREÇÃO 1: Aninhamento em .links para CSS padrão */
 .links {
     text-align: center;
     font-style: italic; 
     background-color: #2563EB;
-
-    a {
-        &:hover {
-        background-color: rgb(209, 99, 9);
-        }
-        color: #1A1A1A;
-    }
-    
+}
+.links a {
+    color: #1A1A1A;
+}
+.links a:hover {
+    background-color: rgb(209, 99, 9);
 }
 
 
-h1 h2 {
+/* CORREÇÃO 3: Uso do seletor de agrupamento (vírgula) para aplicar a ambos. */
+h1, h2 {
     text-transform: uppercase;
     font-weight: 700;
 }
 
 p {
     line-height: 1.5;
-    text-align: center;
+    text-align: center; 
     color: white;
 }
 
