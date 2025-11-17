@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Questãi 1 <br>
+
+<input type="text" id="campoTexto">
+    <button onclick="mostrarTexto()">Enviar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarTexto() {
+            let texto = document.getElementById("campoTexto").value;
+            document.getElementById("resultado").innerHTML = texto;
+        }
+    </script>
+
+
+Questão 2 <BR>
+    <script>
+        const somar = (a, b) => a + b;
+        document.write(somar(2, 9) + "<br>");
+
+        function bloco1(){
+            if (true) {
+                let x = 10;
+                document.write(x);
+            }
+        }
+
+        bloco1();
+    </script>
+
+
+<br>Questão 3 <br> 
+
+    <p class="grupo">Texto 1</p>
+    <p class="grupo">Texto 2</p>
+    <p class="grupo">Texto 3</p>
+
+    <button onclick="mudarEstilo()">Clique para mudar</button>
+
+    <script>
+        function mudarEstilo() {
+            let elementos = document.getElementsByClassName("grupo");
+
+            for (let i = 0; i < elementos.length; i++) {
+                elementos[i].style.color = "red";
+                elementos[i].style.fontSize = "20px";
+            }
+        }
+    </script>
+
+
+<br>Questão 4 <br>
+
+    <ul id="minhaLista"></ul>
+
+    <button onclick="adicionarItem()">Adicionar item</button>
+
+    <script>
+        function adicionarItem() {
+            let lista = document.getElementById("minhaLista");
+
+            let novoItem = document.createElement("li"); 
+            novoItem.innerHTML = "Novo item da lista";
+
+            lista.appendChild(novoItem);
+        }
+    </script>
+    <!--
+    Ó Sor, a explicação
+
+    document.getElementById()
+    Acessa a <ul> da página.
+
+    document.createElement("li")
+    Cria um novo elemento HTML do zero.
+
+    novoItem.innerHTML = "…"
+    Coloca o texto dentro do item.
+
+    lista.appendChild(novoItem)
+    Insere o novo <li> dentro da <ul> já existente no DOM.
+    
+    -->
+
+<br>Questão 5<br> 
+
+    <p id="texto">Este é o elemento original.</p>
+
+    <button onclick="removerElemento()">Remover</button>
+    <button onclick="substituirElemento()">Substituir</button>
+
+    <script>
+        function removerElemento() {
+            let elemento = document.getElementById("texto");
+            elemento.remove(); // remove o elemento do DOM
+        }
+
+        function substituirElemento() {
+            let elemento = document.getElementById("texto");
+
+            let novo = document.createElement("p");
+            novo.innerHTML = "Este é o novo elemento (substituído).";
+
+            elemento.replaceWith(novo); // substitui o elemento antigo pelo novo
+        }
+    </script>
+    <!--
+    1) element.remove()
+    Remove o elemento completamente da página.
+    Acontece na hora, atualizando o DOM automaticamente.
+    2) document.createElement()
+    Cria um novo elemento HTML pelo JavaScript.
+    Ele ainda não aparece na página até ser inserido.
+    3) element.replaceWith(novoElemento)
+    Troca um elemento existente por outro.
+    O DOM é atualizado imediatamente.
+    -->
+</body>
+</html>
